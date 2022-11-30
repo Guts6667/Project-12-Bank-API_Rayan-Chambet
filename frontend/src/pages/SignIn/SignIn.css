@@ -1,0 +1,95 @@
+.container__signIn {
+  background-color: #12002b;
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container__signIn-modal {
+  margin-top: 50px;
+  background-color: white;
+  width: 350px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  row-gap: 20px;
+  padding: 40px;
+}
+
+.container__signIn-modal img {
+  width: 20px;
+}
+
+.container__signIn-modal .form-signIn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 20px;
+  width: 100%;
+}
+
+.container__signIn-modal .form-signIn-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container__signIn-modal .form-signIn-input label {
+  font-weight: 600;
+}
+
+.container__signIn-modal .form-signIn-ratio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  -webkit-column-gap: 5px;
+          column-gap: 5px;
+}
+
+.container__signIn-modal .form-signIn-ratio label {
+  font-weight: 300;
+}
+
+.container__signIn-modal .form-signIn-ratio input {
+  width: 15px;
+}
+
+.container__signIn-modal .form-signIn-submit input {
+  width: 100%;
+  background-color: #00bc77;
+  border: none;
+  color: white;
+  text-decoration: underline;
+  font-weight: 700;
+  font-size: 18px;
+  padding: 10px;
+}
+/*# sourceMappingURL=SignIn.css.map */

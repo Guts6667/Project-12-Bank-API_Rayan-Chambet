@@ -1,0 +1,33 @@
+.container__header {
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container__header img {
+  width: 150px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-left: 30px;
+}
+
+.container__header .signIn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  margin-right: 30px;
+}
+
+.container__header .signIn img {
+  width: 30px;
+}
+/*# sourceMappingURL=Header.css.map */

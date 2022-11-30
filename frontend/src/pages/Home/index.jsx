@@ -1,6 +1,5 @@
 import React from "react";
 import "./Home.scss"
-import {Link} from "react-router-dom";
 /**
  * Page Home
  * @returns {JSX} React Component
@@ -9,10 +8,6 @@ const Home = () => {
 
     return(
         <div className="container__home">
-            <header className="container__home-header">
-                <img src="/img/argentBankLogo.png" alt="Logo Argent Bank" />
-                <Link to={"/signin"} className="signIn"><img src="/img/icons/circle-user-solid.svg" alt="Icon User"></img> Sign In</Link>
-            </header>
             <section className="container__home-hero">
                 <div>
                     <h2>No fees.<br/> No minimum deposit.<br/>High interest rates.</h2>
@@ -42,9 +37,6 @@ const Home = () => {
                     <p>We use top of the line encryption to make sure your data and money is always safe.</p>
                 </article>
             </section>
-            <footer className="container__home-footer">
-                <p>Copyright 2020 Argent Bank</p>
-            </footer>
         </div>
     )
 }

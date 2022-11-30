@@ -1,3 +1,7 @@
+## Install Sass
+
+Run: `yarn add sass` or `npm add sass`
+
 # Project #10 - Argent Bank API
 
 This codebase contains the code needed to run the backend for Argent Bank.

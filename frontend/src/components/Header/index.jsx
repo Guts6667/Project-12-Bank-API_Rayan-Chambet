@@ -19,7 +19,7 @@ const Header = () => {
                 <Link to={"/"}><img src="/img/argentBankLogo.png" alt="Logo Argent Bank" /></Link>
                 {
                     isHome && (
-                        <Link to={"/signin"} className="signIn"><img src="/img/icons/circle-user-solid.svg" alt="Icon User"></img> Sign In</Link>
+                        <Link to={"/login"} className="signIn"><img src="/img/icons/circle-user-solid.svg" alt="Icon User"></img> Sign In</Link>
                     )
                 }
             </header>

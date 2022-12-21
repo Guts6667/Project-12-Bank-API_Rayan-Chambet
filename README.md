@@ -1,17 +1,17 @@
 # Project #13 - Argent Bank API
 
-### Context
+### Context 🤔
 
 This is a school project made to validate my bachelor.
 The backend has been forked from:
 
 https://github.com/OpenClassrooms-Student-Center/Project-10-Bank-API.git
 
-### Goal
+### Goal 🎯
 
 The goal of this project was to create the front-end using react and redux.
 
-## Getting Started
+## Getting Started 🚦
 
 ### Install dependencies
 
@@ -57,13 +57,13 @@ npm run populate-db
 
 Your server should now be running at http://locahost:3001 and you will now have two users in your MongoDB database!
 
-### Having trouble launching the backend on MacOS?
+### Having trouble launching the backend on MacOS? 💻 
 
-#### Mongo
+#### Mongo 🌱
 
 Follow this link for complete instructions https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-os-x/
 
-#### Homebrew
+#### Homebrew 🍺
 
 If you don't have home brew package manager installed (global) then: https://brew.sh/index_fr
 
@@ -107,7 +107,7 @@ Once you run the `populate-db` script, you should have two users in your databas
 - Email: `steve@rogers.com`,
 - Password: `password456`
 
-## API Documentation
+## API Documentation ℹ️
 
 To learn more about how the API works, once you have started your local environment, you can visit: http://localhost:3001/api-docs
 

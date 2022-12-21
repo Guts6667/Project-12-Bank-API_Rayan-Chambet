@@ -2,15 +2,18 @@ import React from "react";
 import "./index.scss";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+// import { Provider } from "react-redux";
 import reportWebVitals from "./reportWebVitals";
 import Home from "./pages/Home";
 import Header from "./components/Header";
 import SignIn from "./pages/SignIn";
 import Footer from "./components/Footer";
+// import store from "./store/store";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
+    {/* <Provider store={store}> */}
     <Router>
       <Header />
       <Routes>
@@ -19,6 +22,7 @@ root.render(
       </Routes>
       <Footer />
     </Router>
+    {/* </Provider> */}
   </React.StrictMode>
 );
 

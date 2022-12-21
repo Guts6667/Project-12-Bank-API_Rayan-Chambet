@@ -1,12 +1,31 @@
-## Install Sass
+# Project #13 - Argent Bank API
 
-Run: `yarn add sass` or `npm add sass`
+### Context
 
-# Project #10 - Argent Bank API
+This is a school project made to validate my bachelor.
+The backend has been forked from:
 
-This codebase contains the code needed to run the backend for Argent Bank.
+https://github.com/OpenClassrooms-Student-Center/Project-10-Bank-API.git
+
+### Goal
+
+The goal of this project was to create the front-end using react and redux.
 
 ## Getting Started
+
+### Install dependencies
+
+Run: `npm install` or `yarn install`
+
+### Install Sass
+
+Run: `yarn add sass` or `npm install sass`
+
+### Install Redux Toolkit
+
+Run: `npm install @reduxjs/toolkit` or `yarn add @reduxjs/toolkit`
+
+## Start the backend
 
 ### Prerequisites
 
@@ -27,14 +46,7 @@ mongo --version
 
 ### Instructions
 
-1. Fork this repo
-1. Clone the repo onto your computer
-1. Open a terminal window in the cloned project
-1. Run the following commands:
-
 ```bash
-# Install dependencies
-npm install
 
 # Start local dev server
 npm run dev:server
@@ -45,9 +57,41 @@ npm run populate-db
 
 Your server should now be running at http://locahost:3001 and you will now have two users in your MongoDB database!
 
+### Having trouble launching the backend on MacOS?
+
+#### Mongo
+
+Follow this link for complete instructions https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-os-x/
+
+#### Homebrew
+
+If you don't have home brew package manager installed (global) then: https://brew.sh/index_fr
+
+To download the official Homebrew formula for MongoDB and the Database Tools, by running the following command in your macOS Terminal:
+`brew tap mongodb/brew`
+
+To update Homebrew and all existing formulae:
+`brew install mongodb-community@6.0`
+
+To install MongoDB, run the following command in your macOS Terminal application:
+`brew install mongodb-community@6.0`
+
+You can verify the version by running: `mongod --version`
+
+Run MongoDB: `brew services start mongodb-community@6.`
+
+To stop it, run: `brew services stop mongodb-community@6.0`
+
+Once MongoDB is running, you can open a new terminal and run:
+`npm run populate-db`
+
 ## Populated Database Data
 
 Once you run the `populate-db` script, you should have two users in your database:
+
+```
+
+```
 
 ### Tony Stark
 

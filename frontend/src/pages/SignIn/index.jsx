@@ -1,25 +1,21 @@
 import React from "react";
 import { useState } from "react";
+import {useDispatch} from "react-redux";
 import login from "../../service/login";
+import { tokenActions } from "../../store/token";
 import "./SignIn.scss"
 
 const SignIn = () => {
-
-    const [username, setUsername] = useState("");
+    const dispatch = useDispatch()
+    const [email, setUsername] = useState("");
     const [password, setPassword] = useState("");
-    const handleSubmit = (event) => {
-        if(username === "" || password === ""){
-            event.preventDefault();
-        }else{
-            alert(`The name you entered was: ${username} ${password}`)
 
-            const data = {
-                "email" : username,
-                "password" : password,
-            }
-            login(data)
-        }
-        
+    // send request with input values and save token in the store
+    const handleSubmit = (event) => {
+        event.preventDefault()
+        login(email, password)
+        dispatch(tokenActions.getToken())
+
       }
     return(
          <main className="container__signIn">

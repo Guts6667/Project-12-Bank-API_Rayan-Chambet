@@ -78,7 +78,7 @@ To install MongoDB, run the following command in your macOS Terminal application
 
 You can verify the version by running: `mongod --version`
 
-Run MongoDB: `brew services start mongodb-community@6.`
+(Open a new terminal) Run MongoDB: `brew services start mongodb-community@6.0`
 
 To stop it, run: `brew services stop mongodb-community@6.0`
 

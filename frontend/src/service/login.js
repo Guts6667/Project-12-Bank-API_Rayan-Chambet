@@ -1,19 +1,14 @@
-const login = (email, password) => {
-  fetch("http://localhost:3001/api/v1/user/login", {
+const login = async (token) => {
+  return await fetch("http://localhost:3001/api/v1/user/profile", {
     method: "POST",
-    body: JSON.stringify({
-      email: email,
-      password: password,
-    }),
     headers: {
       "Content-Type": "application/json",
+      Authorization: `Bearer ${token}`,
     },
   })
     .then((res) => res.json())
     .then((res) => {
-      console.log(res);
-      window.localStorage.setItem("token", res.body.token);
-      return res.body.token;
+      return res;
     });
 };
 

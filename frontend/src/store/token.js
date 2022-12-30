@@ -7,15 +7,17 @@ const tokenSlice = createSlice({
   initialState: initialTokenState,
 
   reducers: {
-    getToken(state, payload) {
-      state.token = window.localStorage.token;
+    //Add a param called payload
+    getToken(state, action) {
+      state.token = action.payload;
       console.log(current(state));
     },
     dropToken(state) {
-      state.token = undefined;
+      state.token = state.initialTokenState;
+      console.log(current(state));
     },
     getState(state) {
-      console.log(state.token);
+      console.log(current(state));
     },
   },
 });

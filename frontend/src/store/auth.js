@@ -5,15 +5,13 @@ const authSlice = createSlice({
   name: "auth",
   //initialState is a part of redux syntax therefore it's mandatory to use this name.
   initialState: initialAuthState,
-  reduce: {
-    login: {
-      login(state) {
-        state.isAuth = true;
-        console.log(current(state));
-      },
+  reducers: {
+    login(state) {
+      state.isAuth = true;
+      console.log(current(state));
     },
     logout(state) {
-      state.isAuth = false;
+      state.isAuth = initialAuthState;
       console.log(current(state));
     },
   },

@@ -8,9 +8,11 @@ import Home from "./pages/Home";
 import Header from "./components/Header";
 import SignIn from "./pages/SignIn";
 import Footer from "./components/Footer";
+import Profile from "./pages/Profile";
 import store from "./store/store";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
+
 root.render(
   <React.StrictMode>
     <Provider store={store}>
@@ -19,6 +21,7 @@ root.render(
         <Routes>
           <Route path={"/"} element={<Home />} />
           <Route path={"/login"} element={<SignIn />} />
+          <Route path={"/profile"} element={<Profile />} />
         </Routes>
         <Footer />
       </Router>

@@ -1,3 +1,5 @@
+// Service to use in case we create a form to signUp
+
 const signup = (datas) => {
   fetch("http://localhost:3001/api/v1/user/login", {
     method: "POST",
@@ -12,5 +14,10 @@ const signup = (datas) => {
     },
   })
     .then((res) => res.json())
-    .then((data) => console.log(data));
+    .then((data) => {
+      console.log(data);
+      return data;
+    });
 };
+
+export default signup;

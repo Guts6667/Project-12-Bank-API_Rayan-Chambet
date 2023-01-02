@@ -13,7 +13,7 @@ const tokenSlice = createSlice({
       console.log(current(state));
     },
     dropToken(state) {
-      state.token = state.initialTokenState;
+      state.token = initialTokenState;
       console.log(current(state));
     },
     getState(state) {

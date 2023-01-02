@@ -1,7 +1,7 @@
 // Service to use in case we create a form to signUp
 
 const signup = (datas) => {
-  fetch("http://localhost:3001/api/v1/user/login", {
+  fetch("http://localhost:3001/api/v1/user/signup", {
     method: "POST",
     body: JSON.stringify({
       email: datas.email,

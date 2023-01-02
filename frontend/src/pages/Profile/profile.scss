@@ -1,0 +1,44 @@
+.container__profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 90vh;
+  background-color: #12002b;
+  row-gap: 50px;
+  button {
+    border-color: #00bc77;
+    background-color: #00bc77;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    color: white !important;
+  }
+  &-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    row-gap: 10px;
+    h1 {
+      color: white !important;
+    }
+  }
+  &-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 10px;
+    .inputBox {
+      display: flex;
+      column-gap: 10px;
+    }
+    .buttonBox {
+      display: flex;
+      justify-content: center;
+      column-gap: 10px;
+      button {
+        width: 100px;
+      }
+    }
+  }
+}

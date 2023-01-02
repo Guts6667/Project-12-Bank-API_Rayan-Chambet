@@ -10,6 +10,7 @@ import SignIn from "./pages/SignIn";
 import Footer from "./components/Footer";
 import Profile from "./pages/Profile";
 import store from "./store/store";
+import Error from "./pages/Error";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -21,7 +22,8 @@ root.render(
         <Routes>
           <Route path={"/"} element={<Home />} />
           <Route path={"/login"} element={<SignIn />} />
-          <Route path={"/profile"} element={<Profile />} />
+          <Route path={"/profile/:id"} element={<Profile />} />
+          <Route path={"/error"} element={<Error />} />
         </Routes>
         <Footer />
       </Router>

@@ -18,6 +18,7 @@ const SignIn = () => {
     const dispatch = useDispatch()
     // Get the state of the token
     const token = useSelector((state) => state.token)
+    const userProfile = useSelector((state) => state.profile)
     // Retrieves the input values via onChange listener
     const [email, setUsername] = useState("");
     const [password, setPassword] = useState("");
@@ -39,12 +40,16 @@ const SignIn = () => {
         const dataUser = await login(dataToken.body.token);
         if(dataUser.status === 200){
           dispatch(profileActions.getProfile(dataUser.body))
-          navigate("/profile")
+          // Issue with update on userProfiles datas
+          // Fix issue and replace navigate by  navigate(`/profile/${userProfile.id}`)
+          if(userProfile){
+            navigate(`/profile/${dataUser.body.id}`)
+          }
+          else{
+            navigate("/error")
+          }
         }
       }
-      // Add a service allowing to modify the userDatas
-      // Make Swagger doc (see OC)
-      
 
       }
     return(

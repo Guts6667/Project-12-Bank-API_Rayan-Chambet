@@ -1,0 +1,76 @@
+[
+    {
+        "id": 543,
+        "type": "Checking",
+        "balance": 2082.79,
+        "transactions": [
+            {
+                "date": "20/02/2022",
+                "number": 1234,
+                "type": "debit",
+
+                "amount": 99.99,
+                "establishment": "Uber"
+            },
+            {
+                "date": "27/02/2022",
+                "number": 1284,
+                "type": "debit",
+                "amount": 19.99,
+                "establishment": "Uber Eats"
+            },
+            {
+                "date": "05/02/2022",
+                "number": 90454,
+                "type": "transfer",
+                "amount": 15000,
+                "establishment": "Google"
+            }
+        ]
+    },
+    {
+        "id": 54456,
+        "type": "Savings",
+        "balance": 10928.42,
+        "transactions": [
+            {
+                "date": "20/02/2022",
+                "number": 1234,
+                "type": "debit",
+                "amount": 99.99,
+                "establishment": "Uber"
+            },
+            {
+                "date": "27/02/2022",
+                "number": 1284,
+                "type": "debit",
+                "amount": 19.99,
+                "establishment": "Uber Eats"
+            }
+        ]
+
+    },
+    {
+        "id": 54653,
+        "type": "Credit Card",
+        "balance": 184.30,
+        "transactions": [
+            {
+                "date": "20/02/2022",
+                "type": "debit",
+                "number": 1234,
+                "amount": 99.99,
+                "establishment": "Uber"
+            },
+            {
+                "date": "27/02/2022",
+                "type": "debit",
+                "number": 1284,
+                "amount": 19.99,
+                "establishment": "Uber Eats"
+            }
+        ]
+
+    }
+
+]

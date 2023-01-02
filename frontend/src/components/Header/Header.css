@@ -15,7 +15,18 @@
   margin-left: 30px;
 }
 
-.container__header .signIn {
+.container__header-rightBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+}
+
+.container__header-rightBlock .btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -27,7 +38,7 @@
   margin-right: 30px;
 }
 
-.container__header .signIn img {
+.container__header-rightBlock .btn img {
   width: 30px;
 }
 /*# sourceMappingURL=Header.css.map */

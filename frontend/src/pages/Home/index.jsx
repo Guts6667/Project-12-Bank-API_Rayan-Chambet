@@ -6,6 +6,7 @@ import "./Home.scss"
  * @returns {JSX} React Component
  */
 const Home = () => {
+   
     return(
         <div className="container__home">
             <section className="container__home-hero">

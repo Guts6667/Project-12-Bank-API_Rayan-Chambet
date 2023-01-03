@@ -22,7 +22,6 @@ const handleLogout = (e) => {
     navigate("/")
     
 }
-console.log(`is auth = ${isAuth}`);
     return(
             <header className="container__header">
                 <Link to={"/"}><img src="/img/argentBankLogo.png" alt="Logo Argent Bank" /></Link>

@@ -6,8 +6,13 @@ import "./Acccounts.scss"
 const Accounts = () => {
     const [accounts, setAccounts] = useState([]);
     const [displayInfos, setDisplayInfos ] = useState(false)
-    const handleDisplayTransactions =() => {
+    const handleDisplayTransactions = (e) => {
+        let targetId = e.target.parentElement.attributes.itemId;
+        console.log(targetId);
+        let transactionBoxes = document.querySelectorAll(".box__transaction");
+        console.log(transactionBoxes);
         setDisplayInfos(!displayInfos)
+
     }
 useEffect(() => {
     
@@ -24,7 +29,7 @@ useEffect(() => {
             accounts.map((account) => {
                 return (
                     <div className="container__account">
-                        <article key={`${account.id}-${account.type}`} className="box__account">
+                        <article itemId={account.id} key={`${account.id}-${account.type}`} className="box__account">
                         <div className="box__account-infos">
                             <span>{`Argent Bank ${account.type} (x${account.id})`}</span>
                             <span>{`$${account.balance}`}</span>
@@ -38,7 +43,7 @@ useEffect(() => {
                             account.transactions.map((transaction)=> {
                                 return(
                                      displayInfos && (
-                                        <article key={`${transaction.number}-${account.id}`} className="box__transaction">
+                                        <article itemId={account.id} key={`${transaction.number}-${account.id}`} className="box__transaction">
                                         <div className="box__transaction-left">
                                             <span>{transaction.type === "debit"? `-${transaction.amount}$` : `+${transaction.amount}$` }</span>
                                             <span>{transaction.establishment}</span>
@@ -52,10 +57,7 @@ useEffect(() => {
                                 )
                             })
                         }
-                        </div>
-                    
-                        
-                    
+                        </div> 
                 )
             })
         }

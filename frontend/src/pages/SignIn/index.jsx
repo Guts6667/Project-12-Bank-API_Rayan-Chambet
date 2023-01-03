@@ -39,9 +39,7 @@ const SignIn = () => {
     // Calls and save the user datas in the const dataUser
         const dataUser = await login(dataToken.body.token);
         if(dataUser.status === 200){
-          dispatch(profileActions.getProfile(dataUser.body))
-          // Issue with update on userProfiles datas
-          // Fix issue and replace navigate by  navigate(`/profile/${userProfile.id}`)
+          dispatch(profileActions.getNames({firstName : dataUser.body.firstName, lastName : dataUser.body.lastName}))
           if(userProfile){
             navigate(`/profile/${dataUser.body.id}`)
           }

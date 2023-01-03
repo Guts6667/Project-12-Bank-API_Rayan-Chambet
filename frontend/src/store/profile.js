@@ -4,23 +4,28 @@ import { createSlice, current } from "@reduxjs/toolkit";
 const initialProfileState = {
   firstName: undefined,
   lastName: undefined,
-  email: undefined,
-  id: undefined,
-  createdAt: undefined,
-  updatedAt: undefined,
+  // email: undefined,
+  // id: undefined,
+  // createdAt: undefined,
+  // updatedAt: undefined,
 };
 
 const profileSlice = createSlice({
   name: "profile",
   initialState: initialProfileState,
   reducers: {
-    getProfile(state, action) {
+    // getProfile(state, action) {
+    //   state.firstName = action.payload.firstName;
+    //   state.lastName = action.payload.lastName;
+    //   state.email = action.payload.email;
+    //   state.id = action.payload.id;
+    //   state.createdAt = action.payload.createdAt;
+    //   state.updatedAt = action.payload.updatedAt;
+    //   console.log(current(state));
+    // },
+    getNames(state, action) {
       state.firstName = action.payload.firstName;
       state.lastName = action.payload.lastName;
-      state.email = action.payload.email;
-      state.id = action.payload.id;
-      state.createdAt = action.payload.createdAt;
-      state.updatedAt = action.payload.updatedAt;
       console.log(current(state));
     },
   },

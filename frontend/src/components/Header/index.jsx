@@ -9,8 +9,6 @@ const Header = () => {
     const navigate = useNavigate();
 // Get the state of the authentification
 const isAuth = useSelector((state) => state.auth.isAuth)
-// Get the state of the token
-const token = useSelector((state) => state.token.token)
 //Retrieve profil infos and change 
 const profile = useSelector((state) => state.profile)
 
@@ -24,20 +22,24 @@ const handleLogout = (e) => {
     navigate("/")
     
 }
-
+console.log(`is auth = ${isAuth}`);
     return(
             <header className="container__header">
                 <Link to={"/"}><img src="/img/argentBankLogo.png" alt="Logo Argent Bank" /></Link>
-                {!isAuth &&
+                {/* {!isAuth &&
                     <div className="container__header-rightBlock">
                     <Link to={"/login"} className="btn"><img src="/img/icons/circle-user-solid.svg" alt="Icon User"></img> Sign In</Link>
                     </div>
-                }
-                {isAuth && token && profile &&
-                <div className="container__header-rightBlock" onClick={handleLogout}>
+                } */}
+                {isAuth ?  (
+                    <div className="container__header-rightBlock" onClick={handleLogout}>
                     <Link to={"/profile"} className="btn"><img src="/img/icons/circle-user-solid.svg" alt="Icon User"></img> {profile.firstName}</Link>
                     <Link to={"/"} className="btn"><img src="/img/icons/right-from-bracket-solid.svg" alt="Icon User" /> Logout</Link>
                 </div>
+                ) :
+                (<div className="container__header-rightBlock">
+                <Link to={"/login"} className="btn"><img src="/img/icons/circle-user-solid.svg" alt="Icon User"></img> Sign In</Link>
+                </div>)
                 } 
             </header>
     )

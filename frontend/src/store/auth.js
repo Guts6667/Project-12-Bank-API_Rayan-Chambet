@@ -11,7 +11,7 @@ const authSlice = createSlice({
       console.log(current(state));
     },
     logout(state) {
-      state.isAuth = initialAuthState;
+      state.isAuth = false;
       console.log(current(state));
     },
   },

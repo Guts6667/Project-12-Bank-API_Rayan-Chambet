@@ -21,11 +21,13 @@ Run: `npm install` or `yarn install`
 
 Run: `yarn add sass` or `npm install sass`
 
-### Install Redux Toolkit
+## Start the front-end 🚦
 
-Run: `npm install @reduxjs/toolkit` or `yarn add @reduxjs/toolkit`
+### In the "front-end" folder:
 
-## Start the backend
+Run: `npm start ` or `yarn start`
+
+## Start the back-end
 
 ### Prerequisites
 

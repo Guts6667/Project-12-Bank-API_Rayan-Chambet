@@ -1,7 +1,9 @@
 import { createSlice, current } from "@reduxjs/toolkit";
 
+// Initial token's state
 const initialTokenState = { token: undefined };
 
+// Token's slice
 const tokenSlice = createSlice({
   name: "token",
   initialState: initialTokenState,

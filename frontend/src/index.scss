@@ -10,3 +10,14 @@ a {
   text-decoration: none;
   color: $color1;
 }
+.container__error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  text-align: center;
+  a {
+    text-decoration: underline;
+  }
+}

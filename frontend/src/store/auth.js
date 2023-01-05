@@ -1,6 +1,12 @@
 import { createSlice, current } from "@reduxjs/toolkit";
 
+// Initial state for auth
 const initialAuthState = { isAuth: false };
+
+/**
+ * Auth Slice
+ *
+ */
 const authSlice = createSlice({
   name: "auth",
   //initialState is a part of redux syntax therefore it's mandatory to use this name.

@@ -1,3 +1,9 @@
+/**
+ * Function that retrieves the token
+ * @param {string} email
+ * @param {string} password
+ * @returns {Promise} Token
+ */
 const getToken = async (email, password) => {
   return await fetch("http://localhost:3001/api/v1/user/login", {
     method: "POST",

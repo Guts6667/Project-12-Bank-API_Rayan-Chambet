@@ -23,7 +23,7 @@ root.render(
           <Route path={"/"} element={<Home />} />
           <Route path={"/login"} element={<SignIn />} />
           <Route path={"/profile/:id"} element={<Profile />} />
-          <Route path={"/error"} element={<Error />} />
+          <Route path={"/*"} element={<Error />} />
         </Routes>
         <Footer />
       </Router>

@@ -3,6 +3,7 @@ import authReducer from "./auth";
 import tokenReducer from "./token";
 import profileReducer from "./profile";
 
+// Store
 const store = configureStore({
   reducer: { auth: authReducer, token: tokenReducer, profile: profileReducer },
 });

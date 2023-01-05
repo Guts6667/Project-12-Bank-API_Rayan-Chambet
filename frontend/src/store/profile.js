@@ -1,6 +1,7 @@
 // Create slice for the profile
 import { createSlice, current } from "@reduxjs/toolkit";
 
+// Initial state for profile
 const initialProfileState = {
   firstName: undefined,
   lastName: undefined,
@@ -10,6 +11,7 @@ const initialProfileState = {
   // updatedAt: undefined,
 };
 
+// Profile's slice
 const profileSlice = createSlice({
   name: "profile",
   initialState: initialProfileState,

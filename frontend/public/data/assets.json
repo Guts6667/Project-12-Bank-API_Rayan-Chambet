@@ -8,7 +8,6 @@
                 "date": "20/02/2022",
                 "number": 1234,
                 "type": "debit",
-
                 "amount": 99.99,
                 "establishment": "Uber"
             },

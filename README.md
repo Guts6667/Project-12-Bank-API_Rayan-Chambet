@@ -50,7 +50,7 @@ mongo --version
 
 ```bash
 
-# Start local dev server
+# Start local dev server (root folder of the project)
 npm run dev:server
 
 # Populate database with two users
